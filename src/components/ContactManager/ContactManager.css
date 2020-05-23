@@ -1,0 +1,15 @@
+.contact-manager-add {
+  position: absolute;
+  top: 1vmin;
+  right: 1vmin;
+  font-size: 2rem;
+  font-weight: 900;
+  cursor: pointer;
+  color: lime;
+  background-color: olivedrab;
+  box-shadow: 5px 5px 5px limegreen;
+  padding: 0.5em;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 5rem;
+}

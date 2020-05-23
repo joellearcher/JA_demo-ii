@@ -1,0 +1,12 @@
+.contact-list-base {
+  background: olivedrab;
+  box-shadow: 5px 5px 5px limegreen;
+  min-width: 50vw;
+}
+
+.contact-list-base th,
+td {
+  text-align: left;
+  padding: 5px;
+  border: 0.5px dotted limegreen;
+}
