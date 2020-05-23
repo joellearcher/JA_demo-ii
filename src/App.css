@@ -9,3 +9,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.green {
+  background: olivedrab;
+  box-shadow: 5px 5px 5px limegreen;
+  color: greenyellow;
+}

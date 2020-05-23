@@ -1,6 +1,5 @@
 import React from 'react'
-
-const DEFAULT_VALUE = 'N/A'
+import { DEFAULT_VALUE } from '../../constants'
 
 const Contact = ({
   email = DEFAULT_VALUE,

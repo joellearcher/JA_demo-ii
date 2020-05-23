@@ -3,7 +3,9 @@ import './ContactList.css'
 import { Contact } from '..'
 
 const ContactList = ({ className, listOfContacts = [] }) => (
-  <table className={`contact-list-base${className ? ` ${className}` : ''}`}>
+  <table
+    className={`contact-list-base green${className ? ` ${className}` : ''}`}
+  >
     <thead>
       <tr>
         <th>Name</th>

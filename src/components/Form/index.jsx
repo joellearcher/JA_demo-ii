@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import './Form.css'
-import { initialValue } from '../../constants'
+import { INITIAL_VALUE } from '../../constants'
+import { Input } from '..'
 
-const requiredFields = Object.keys(initialValue)
+const requiredFields = Object.keys(INITIAL_VALUE)
 
-const Form = ({ data = initialValue, onSubmit }) => {
+const Form = ({ data = INITIAL_VALUE, onSubmit }) => {
   const [formData, setFormData] = useState(data)
   const onChange = (event) =>
     setFormData({ ...formData, [event.target.id]: event.target.value })
@@ -15,11 +16,16 @@ const Form = ({ data = initialValue, onSubmit }) => {
   }
 
   return (
-    <form onClick={onClick} className='form' onSubmit={onSubmitWrapper}>
+    <form onClick={onClick} className='form green' onSubmit={onSubmitWrapper}>
       {requiredFields.map((field) => (
-        <input id={field} onChange={onChange} value={formData[field]} />
+        <Input
+          key={field}
+          id={field}
+          onChange={onChange}
+          defaultValue={formData[field]}
+        />
       ))}
-      <input type='submit' value='Submit' />
+      <Input type='submit' value='Submit' />
     </form>
   )
 }

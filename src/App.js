@@ -3,13 +3,11 @@ import './App.css'
 import { ContactList, ContactManager } from './components'
 
 const App = () => {
-  const [contacts, setContacts] = useState([
-    { name: 'pippi', phone: '12345678', email: 'pippi@cat.com' },
-    { name: 'cat', phone: '23456789', email: 'shameless_napper@pippi.com' },
-    { name: 'feline', phone: '34567890', email: 'bestcat@felineworld.com' },
-  ])
+  const [contacts, setContacts] = useState([])
   const addContacts = (data) => {
-    setContacts(contacts.concat(data))
+    setContacts(
+      contacts.filter((contact) => contact.name !== data.name).concat(data),
+    )
   }
 
   return (

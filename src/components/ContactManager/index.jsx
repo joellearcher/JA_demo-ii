@@ -8,7 +8,7 @@ const ContactManager = ({ onSubmit }) => {
 
   return (
     <>
-      <div className='contact-manager-add' onClick={onClick}>
+      <div className='contact-manager-add green' onClick={onClick}>
         +
       </div>
       <Modal onClick={onClick} isActive={isExpanded}>

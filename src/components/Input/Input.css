@@ -1,0 +1,8 @@
+.input-label {
+  text-transform: capitalize;
+}
+
+.input-input {
+  border-radius: 3px;
+  max-width: 30rem;
+}
