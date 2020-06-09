@@ -1,6 +1,6 @@
 .app {
   text-align: center;
-  background-color: #282c34;
+  background-color: #5b3256;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
 }
 
 .green {
-  background: olivedrab;
-  box-shadow: 5px 5px 5px limegreen;
-  color: greenyellow;
+  background: #bf55ec;
+  box-shadow: 5px 5px 5px #8e44ad;
+  color: #1d0c25;
 }

@@ -14,7 +14,7 @@
 }
 
 .modal.active {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #5b3256;
   z-index: 1;
   transition: z-index 0.2s linear, background-color 0.2s linear;
 }

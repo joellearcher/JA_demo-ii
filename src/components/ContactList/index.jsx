@@ -1,10 +1,10 @@
-import React from 'react'
-import './ContactList.css'
-import { Contact } from '..'
+import React from "react";
+import "./ContactList.css";
+import { Contact } from "..";
 
 const ContactList = ({ className, listOfContacts = [] }) => (
   <table
-    className={`contact-list-base green${className ? ` ${className}` : ''}`}
+    className={`contact-list-base green${className ? ` ${className}` : ""}`}
   >
     <thead>
       <tr>
@@ -17,14 +17,14 @@ const ContactList = ({ className, listOfContacts = [] }) => (
     </thead>
     {listOfContacts.length ? (
       <tbody>
-        {listOfContacts.map((contact) => (
+        {listOfContacts.map(contact => (
           <Contact {...contact} />
         ))}
       </tbody>
     ) : (
-      <div>No contacts present here yet</div>
+      <div>Please press the + symbol on the top right</div>
     )}
   </table>
-)
+);
 
-export default ContactList
+export default ContactList;
